@@ -1,4 +1,20 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+"start plugins
+
+Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
+
+"end plugins
+
+call vundle#end()
 filetype plugin indent on
+
 syntax on
 let mapleader = ","
 color koehler
