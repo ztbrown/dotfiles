@@ -1,27 +1,22 @@
 set nocompatible
-filetype off 
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-"start plugins
-"
-"Plugin 'avakhov/vim-yaml'
-"Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
-"Plugin 'maxmellon/vim-jsx-pretty'
-"Plugin 'tarekbecker/vim-yaml-formatter'
-"
-""end plugins
-
-set visualbell
+Plugin 'avakhov/vim-yaml'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'tarekbecker/vim-yaml-formatter'
+Plugin 'wincent/command-t'
 
 call vundle#end()
 filetype plugin indent on
+set visualbell
 
 syntax on
-let mapleader = "," 
+let mapleader = ","
 color koehler
 set tabstop=2
 set shiftwidth=2
@@ -41,6 +36,5 @@ nnoremap <leader>sv :source ~/.vimrc<cr>
 
 map <leader>y :screen -r<cr>
 
-nnoremap <leader>1 :!clear<cr>:!make test_suite && ./test_suite<cr>
 "remove trailing whitespace with F5
 "nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
